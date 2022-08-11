@@ -28,9 +28,9 @@ namespace CryptoNote
 
         const size_t CRYPTONOTE_MAX_TX_SIZE = 1000000000;
 
-        const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX = 0x7ced;
+        const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX = 0x7ebfd;
 
-        const uint32_t CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW = 10;
+        const uint32_t CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW = 5;
 
         const uint64_t CRYPTONOTE_BLOCK_FUTURE_TIME_LIMIT = 60 * 60 * 2;
 
@@ -62,7 +62,7 @@ namespace CryptoNote
         static_assert(EMISSION_SPEED_FACTOR <= 8 * sizeof(uint64_t), "Bad EMISSION_SPEED_FACTOR");
 
         const char GENESIS_COINBASE_TX_HEX[] =
-            "010a01ff00013e029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd088071840101018b5f8060df1db09d8d0d67a1bd2e8d84341cccc8901435671cb2299859e7080400000000000000000000000000000000000000000000000000000000000000000500000000000000000000000000000000000000000000000000000000000000000654a9895562002c053615e8dca7cd56dc179c5f3e56e316be7cf30f47429b050e";
+            "010a01ff00013e029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880718401014a383459a7d53d8fea56f2a0a0ba756a86315edb5bc63c29665644f0bfb85f2004000000000000000000000000000000000000000000000000000000000000000005000000000000000000000000000000000000000000000000000000000000000006d162e455fbb19052d9795de1faa5e1f9dc7981b96763d5bfbca56fba9af0fd0e";
 
         static_assert(
             sizeof(GENESIS_COINBASE_TX_HEX) / sizeof(*GENESIS_COINBASE_TX_HEX) != 1,
@@ -288,7 +288,7 @@ namespace CryptoNote
         const char MINER_CONFIG_FILE_NAME[] = "miner_conf.json";
     } // namespace parameters
 
-    const char CRYPTONOTE_NAME[] = "MMPLcoin";
+    const char CRYPTONOTE_NAME[] = "janetacoin";
 
     const uint8_t TRANSACTION_VERSION_1 = 1;
 
@@ -323,9 +323,9 @@ namespace CryptoNote
     const uint64_t BLOCKS_SYNCHRONIZING_DEFAULT_COUNT = 100; // by default, blocks count in blocks downloading
     const size_t COMMAND_RPC_GET_BLOCKS_FAST_MAX_COUNT = 1000;
 
-    const int P2P_DEFAULT_PORT = 10101;
+    const int P2P_DEFAULT_PORT = 10123;
 
-    const int RPC_DEFAULT_PORT = 10102;
+    const int RPC_DEFAULT_PORT = 10124;
 
     const int SERVICE_DEFAULT_PORT = 8070;
 
@@ -379,8 +379,8 @@ namespace CryptoNote
         {0xb5, 0x4a, 0x0c, 0x6c, 0xcf, 0x52, 0x57, 0x41, 0x65, 0xf9, 0x91, 0xa4, 0xb6, 0xc1, 0x43, 0xe9}};
 
     const char *const SEED_NODES[] = {
-        "149.28.226.151:10101",//node3
-        "155.138.159.234:10101", //node4
+        "192.241.157.165:10123",//node3
+        "137.184.16.182:10101", //node4
 
     };
 } // namespace CryptoNote
