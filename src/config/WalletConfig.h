@@ -23,7 +23,7 @@ namespace WalletConfig
     const std::string addressBookFilename = ".addressBook.json";
 
     /* The name of your deamon */
-    const std::string daemonName = "janetacoind";
+    const std::string daemonName = "janetaCoind";
 
     /* The name to call this wallet */
     const std::string walletName = "jawallet";
